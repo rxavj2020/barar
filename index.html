@@ -1,202 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Static Websites | Elevate Your Digital Presence</title>
-    <meta name="description"
-        content="I create simple, beautiful, and high-performance static websites for clients easily. Connect with me today to elevate your online presence.">
-
-    <!-- Google Fonts -->
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="A modern portfolio showcasing creative web development and design.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-    <!-- Link to Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- FontAwesome for WhatsApp Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Custom Cursor -->
-    <div class="custom-cursor"></div>
+    <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <div class="glow-container">
-        <div class="bg-glow blob-1"></div>
-        <div class="bg-glow blob-2"></div>
-    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">PORTFOLIO<span>.</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
+        </div>
+    </nav>
 
-    <div class="glass-container">
-        <header>
-            <div class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
-                <span class="logo-text">Barar.in</span>
-            </div>
-        </header>
-
-        <main>
-            <section class="hero">
-                <span class="badge">Available for freelance work</span>
-                <h1 class="animate-up">Hi, I'm <span class="text-gradient">Rakesh Barar</span>.</h1>
-                <h2 class="animate-up delay-1 subtitle"
-                    style="font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem;">
-                    Creative Developer & Designer</h2>
-                <p class="subtitle animate-up delay-2">
-                    I craft stunning, high-performance web experiences that live at the intersection of beautiful design
-                    and flawless engineering.
-                </p>
-
-                <!-- Mobile Scroll Indicator -->
-                <div class="scroll-indicator animate-up delay-2">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                    <span>Scroll</span>
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-content" data-scroll>
+                <div class="reveal-text">
+                    <p class="subtitle">Hi, I'm a</p>
                 </div>
-            </section>
-
-            <!-- About Section with 3D Card -->
-            <section class="about">
-                <div class="about-grid">
-                    <div class="about-text gsap-fade-up">
-                        <h2>More than just <span class="text-gradient">code</span>.</h2>
-                        <p>I believe the best websites aren't just built; they're thoughtfully crafted. With a keen eye
-                            for aesthetics and a deep understanding of modern web technologies, I bring ideas to life in
-                            ways that are both visually captivating and functionally robust.</p>
-                        <p>When I'm not pushing pixels or wrangling code, I'm constantly exploring new tools and
-                            techniques to stay at the cutting edge of digital design.</p>
+                <div class="reveal-text">
+                    <h1 class="title">Creative</h1>
+                </div>
+                <div class="reveal-text">
+                    <h1 class="title highlight">Developer</h1>
+                </div>
+                <p class="hero-desc" data-scroll data-scroll-delay="0.2">
+                    Crafting premium digital experiences through motion, interaction, and modern web technologies.
+                </p>
+                <div class="hero-btns" data-scroll data-scroll-delay="0.4">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-scroll data-scroll-delay="0.6">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="glass-panel">
+                    <div class="code-snippet">
+                        <span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {
+                        <br>&nbsp;&nbsp;<span class="property">passion</span>: <span class="string">'UI/UX'</span>,
+                        <br>&nbsp;&nbsp;<span class="property">focus</span>: <span class="string">'Animations'</span>,
+                        <br>&nbsp;&nbsp;<span class="property">drink</span>: <span class="string">'Coffee'</span>
+                        <br>};
                     </div>
-                    <div class="about-visual gsap-3d-card">
-                        <!-- Placeholder for a personal photo -->
-                        <div class="photo-card">
-                            <div class="photo-placeholder">
-                                <i class="fa-solid fa-user-astronaut"></i>
-                            </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll</p>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="section-header" data-scroll>
+                <span class="section-subtitle">01. About Me</span>
+                <h2 class="section-title">Turning ideas into reality</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-scroll>
+                    <p>I'm a passionate developer specializing in building exceptional digital experiences. Currently, I'm focused on creating accessible, human-centered products.</p>
+                    <p>My journey in web development started back in 2018, and since then, I've had the privilege of creating digital solutions for various clients. I bridge the gap between design and engineering seamlessly.</p>
+                    
+                    <div class="skills-container">
+                        <h3>Technologies I work with:</h3>
+                        <ul class="skills-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>React / Next.js</li>
+                            <li>HTML5 / CSS3</li>
+                            <li>Node.js</li>
+                            <li>Three.js</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image" data-scroll data-scroll-delay="0.2">
+                    <div class="image-wrapper">
+                        <!-- Placeholder for user image, applying a striking gradient for now -->
+                        <div class="image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+             <div class="section-header" data-scroll>
+                <span class="section-subtitle">02. Selected Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-scroll>
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-1"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">A modern, headless e-commerce solution built with cutting-edge technologies and smooth page transitions.</p>
+                        <ul class="project-tech">
+                            <li>Next.js</li>
+                            <li>Tailwind</li>
+                            <li>Stripe</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Live View ↗</a>
                         </div>
                     </div>
-                </div>
-            </section>
+                </article>
 
-            <!-- Tech Stack Marquee -->
-            <section class="stack">
-                <div class="section-header">
-                    <h2 class="gsap-reveal-text"><span>My Toolkit</span></h2>
-                </div>
-                <div class="marquee-wrapper">
-                    <div class="marquee-content">
-                        <!-- Duplicated for infinite scroll effect -->
-                        <span>HTML5</span><span>•</span>
-                        <span>CSS3</span><span>•</span>
-                        <span>JavaScript (ES6+)</span><span>•</span>
-                        <span>React</span><span>•</span>
-                        <span>GSAP</span><span>•</span>
-                        <span>Figma</span><span>•</span>
-                        <span>UI/UX</span><span>•</span>
-                        <span>Webflow</span><span>•</span>
-                        <!-- Duplicate -->
-                        <span>HTML5</span><span>•</span>
-                        <span>CSS3</span><span>•</span>
-                        <span>JavaScript (ES6+)</span><span>•</span>
-                        <span>React</span><span>•</span>
-                        <span>GSAP</span><span>•</span>
-                        <span>Figma</span><span>•</span>
-                        <span>UI/UX</span><span>•</span>
-                        <span>Webflow</span><span>•</span>
+                <!-- Project 2 -->
+                <article class="project-card" data-scroll data-scroll-delay="0.1">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-2"></div>
                     </div>
-                </div>
-            </section>
+                    <div class="project-info">
+                        <h3 class="project-title">Fintech Dashboard</h3>
+                        <p class="project-desc">An intuitive dashboard for managing finances, featuring complex data visualization and real-time updates.</p>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>D3.js</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Live View ↗</a>
+                        </div>
+                    </div>
+                </article>
 
-            <!-- Process Timeline -->
-            <section class="process">
-                <div class="section-header">
-                    <h2 class="gsap-reveal-text"><span>How I Work</span></h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item gsap-timeline-item">
-                        <div class="step-number">01</div>
-                        <h3>Discover & Strategy</h3>
-                        <p>We start by aligning on your goals, target audience, and the unique value proposition of your
-                            brand.</p>
+                <!-- Project 3 -->
+                <article class="project-card" data-scroll data-scroll-delay="0.2">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-3"></div>
                     </div>
-                    <div class="timeline-item gsap-timeline-item">
-                        <div class="step-number">02</div>
-                        <h3>Design & Prototype</h3>
-                        <p>Crafting high-fidelity mockups and interactive prototypes to visualize the end product before
-                            writing a single line of code.</p>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Video Generator</h3>
+                        <p class="project-desc">A web application leveraging AI models to generate short-form videos from text prompts.</p>
+                        <ul class="project-tech">
+                            <li>Vue.js</li>
+                            <li>Python</li>
+                            <li>AWS</li>
+                        </ul>
+                         <div class="project-links">
+                            <a href="#" class="link-btn">Live View ↗</a>
+                        </div>
                     </div>
-                    <div class="timeline-item gsap-timeline-item">
-                        <div class="step-number">03</div>
-                        <h3>Develop & Refine</h3>
-                        <p>Bringing the design to life with clean, semantic code and fluid animations, ensuring
-                            cross-browser compatibility.</p>
-                    </div>
-                    <div class="timeline-item gsap-timeline-item">
-                        <div class="step-number">04</div>
-                        <h3>Launch & Support</h3>
-                        <p>Deploying the site with optimal performance and SEO, and providing ongoing support to ensure
-                            it continues to shine.</p>
-                    </div>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <section class="services">
-                <div class="section-header">
-                    <h2 class="gsap-reveal-text"><span>Premium Services</span></h2>
-                    <p class="gsap-fade-up">Everything you need to launch a stunning digital experience.</p>
-                </div>
-                <div class="cards-grid">
-                    <div class="service-card gsap-3d-card">
-                        <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                        <h3>UI/UX Design</h3>
-                        <p>Beautiful, intuitive interfaces that captivate users and drive engagement.</p>
-                    </div>
-                    <div class="service-card gsap-3d-card">
-                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-                        <h3>Web Development</h3>
-                        <p>Lightning-fast, responsive static websites built with modern technologies.</p>
-                    </div>
-                    <div class="service-card gsap-3d-card">
-                        <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
-                        <h3>SEO Optimization</h3>
-                        <p>Elevate your ranking and get discovered with baked-in search engine best practices.</p>
-                    </div>
-                </div>
-            </section>
+        <section id="contact" class="contact section">
+            <div class="contact-content" data-scroll>
+                <span class="section-subtitle">03. What's Next?</span>
+                <h2 class="section-title mb-0">Get In Touch</h2>
+                <p>I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <a href="mailto:hello@example.com" class="btn btn-primary btn-large">Say Hello</a>
+            </div>
+        </section>
+    </main>
 
-            <section class="impact">
-                <div class="impact-content gsap-fade-up">
-                    <h2>Ready to <span class="text-gradient">transform</span> your brand?</h2>
-                    <p>Stop settling for mediocre templates. Let's create something extraordinary together.</p>
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="https://wa.me/918290179346?text=Hi!%20Let's%20build%20something%20awesome!"
-                            class="btn-primary" target="_blank" rel="noopener noreferrer">
-                            Get Started Now <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <a href="https://wa.me/918290179346?text=Hi%20Rakesh!%20I'd%20love%20to%20work%20with%20you."
-                            class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-whatsapp"></i> Let's Chat
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy;
-                <script>document.write(new Date().getFullYear())</script> Barar.in. Designed with passion.
-            </p>
-        </footer>
-    </div>
-
-    <!-- GSAP & ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>Designed and Built by <span class="highlight">Creative Developer</span></p>
+            <div class="social-links">
+                <a href="#">Github</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
